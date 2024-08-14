@@ -9,10 +9,14 @@ main {
 
 aside {
     width: 25%;
+    height: 100vh;
+    border: 1px solid #000;
 }
 
 article {
     width: 75%;
+    height: 100vh;
+    border: 1px solid #000;
 }
 
 /* Mobile breakpoint */
@@ -23,5 +27,6 @@ article {
 
     article {
         width: 100%;
+        background-color: lightgray;
     }
 }
