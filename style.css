@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 25%;
+}
+
+article {
+    width: 75%;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 600px) {
+    aside {
+        display: none;
+    }
+
+    article {
+        width: 100%;
+    }
+}
