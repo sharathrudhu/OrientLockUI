@@ -10,23 +10,43 @@ main {
 aside {
     width: 25%;
     height: 100vh;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 article {
     width: 75%;
     height: 100vh;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 /* Mobile breakpoint */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    main {
+        height: 99vh;
+    }
     aside {
         display: none;
     }
 
     article {
-        width: 100%;
+        width: 100vw;
+        height: 99vh;
         background-color: lightgray;
+    }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    main {
+        width: 70%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    aside {
+        background-color: #CCC;
+    }
+
+    article {
+        background-color: #eee;
     }
 }
